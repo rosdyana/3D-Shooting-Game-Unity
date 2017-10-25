@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: 059659377357c7f4da639e9b3ab32204
+labels:
+- WhiteRabbiTsTudio
+- WhiteRabbiT
+- White
+- RabbiT
+- sTudio
+- LowPoly
+- Low
+- Poly
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Armature
+    100002: ArmLeft[LerpAnim]
+    100004: ArmRight[LerpAnim]
+    100006: Body[LerpAnim]
+    100008: BodyRot
+    100010: Camera
+    100012: ClavicleLeft[Bone]
+    100014: ClavicleRight[Bone]
+    100016: Dummies
+    100018: DummyHeadTransform
+    100020: EarLeft0[Bone]
+    100022: EarLeft1[Bone][Kine]
+    100024: EarLeft2[Bone][Kine]
+    100026: EarLeft[LerpAnim]
+    100028: EarRight0[Bone]
+    100030: EarRight1[Bone][Kine]
+    100032: EarRight2[Bone][Kine]
+    100034: EarRight[LerpAnim]
+    100036: FingerLeft00[Bone]
+    100038: FingerLeft01[Bone]
+    100040: FingerLeft02[Bone]
+    100042: FingerLeft10[Bone]
+    100044: FingerLeft11[Bone]
+    100046: FingerLeft12[Bone]
+    100048: FingerLeft30[Bone]
+    100050: FingerLeft31[Bone]
+    100052: FingerLeft32[Bone]
+    100054: FingerRight00[Bone]
+    100056: FingerRight01[Bone]
+    100058: FingerRight02[Bone]
+    100060: FingerRight10[Bone]
+    100062: FingerRight11[Bone]
+    100064: FingerRight12[Bone]
+    100066: FingerRight20[Bone]
+    100068: FingerRight21[Bone]
+    100070: FingerRight22[Bone]
+    100072: FootLeft[Bone][IK:FootLeft:1]
+    100074: FootLeft[LerpAnim]
+    100076: FootRight[Bone][IK:FootRight:1]
+    100078: FootRight[LerpAnim]
+    100080: ForearmLeft[Bone][IK:ArmLeft:2]
+    100082: ForearmRight[Bone][IK:ArmRight:2]
+    100084: Head0[Bone][IK:Head:1]
+    100086: Head1[Bone]
+    100088: Head[LerpAnim]
+    100090: Lamp
+    100092: LegLeft[LerpAnim]
+    100094: LegRight[LerpAnim]
+    100096: Neck[Bone][IK:Neck:1]
+    100098: Neck[LerpAnim]
+    100100: Pelvis[Bone][CpyLoc:BodyRot]
+    100102: PelvisLeft[Bone]
+    100104: PelvisRight[Bone]
+    100106: Rabbit_LowPoly
+    100108: //RootNode
+    100110: ShinLeft[Bone][IK:LegLeft:2]
+    100112: ShinRight[Bone][IK:LegRight:2]
+    100114: ShoulderLeft[Bone]
+    100116: ShoulderRight[Bone]
+    100118: Spine0[Bone]
+    100120: Spine1[Bone][IK:Spine:2]
+    100122: Spine[LerpAnim]
+    100124: Tail0[Bone]
+    100126: Tail1[Bone][Kine]
+    100128: ThumbLeft0[Bone]
+    100130: ThumbLeft1[Bone]
+    100132: ThumbLeft2[Bone]
+    100134: ThumbRight0[Bone]
+    100136: ThumbRight1[Bone]
+    100138: ThumbRight2[Bone]
+    100140: TighLeft[Bone]
+    100142: TighRight[Bone]
+    100144: ToesLeft[Bone][IK:ToesLeft:1]
+    100146: ToesLeft[LerpAnim]
+    100148: ToesRight[Bone][IK:ToesRight:1]
+    100150: ToesRight[LerpAnim]
+    400000: Armature
+    400002: ArmLeft[LerpAnim]
+    400004: ArmRight[LerpAnim]
+    400006: Body[LerpAnim]
+    400008: BodyRot
+    400010: Camera
+    400012: ClavicleLeft[Bone]
+    400014: ClavicleRight[Bone]
+    400016: Dummies
+    400018: DummyHeadTransform
+    400020: EarLeft0[Bone]
+    400022: EarLeft1[Bone][Kine]
+    400024: EarLeft2[Bone][Kine]
+    400026: EarLeft[LerpAnim]
+    400028: EarRight0[Bone]
+    400030: EarRight1[Bone][Kine]
+    400032: EarRight2[Bone][Kine]
+    400034: EarRight[LerpAnim]
+    400036: FingerLeft00[Bone]
+    400038: FingerLeft01[Bone]
+    400040: FingerLeft02[Bone]
+    400042: FingerLeft10[Bone]
+    400044: FingerLeft11[Bone]
+    400046: FingerLeft12[Bone]
+    400048: FingerLeft30[Bone]
+    400050: FingerLeft31[Bone]
+    400052: FingerLeft32[Bone]
+    400054: FingerRight00[Bone]
+    400056: FingerRight01[Bone]
+    400058: FingerRight02[Bone]
+    400060: FingerRight10[Bone]
+    400062: FingerRight11[Bone]
+    400064: FingerRight12[Bone]
+    400066: FingerRight20[Bone]
+    400068: FingerRight21[Bone]
+    400070: FingerRight22[Bone]
+    400072: FootLeft[Bone][IK:FootLeft:1]
+    400074: FootLeft[LerpAnim]
+    400076: FootRight[Bone][IK:FootRight:1]
+    400078: FootRight[LerpAnim]
+    400080: ForearmLeft[Bone][IK:ArmLeft:2]
+    400082: ForearmRight[Bone][IK:ArmRight:2]
+    400084: Head0[Bone][IK:Head:1]
+    400086: Head1[Bone]
+    400088: Head[LerpAnim]
+    400090: Lamp
+    400092: LegLeft[LerpAnim]
+    400094: LegRight[LerpAnim]
+    400096: Neck[Bone][IK:Neck:1]
+    400098: Neck[LerpAnim]
+    400100: Pelvis[Bone][CpyLoc:BodyRot]
+    400102: PelvisLeft[Bone]
+    400104: PelvisRight[Bone]
+    400106: Rabbit_LowPoly
+    400108: //RootNode
+    400110: ShinLeft[Bone][IK:LegLeft:2]
+    400112: ShinRight[Bone][IK:LegRight:2]
+    400114: ShoulderLeft[Bone]
+    400116: ShoulderRight[Bone]
+    400118: Spine0[Bone]
+    400120: Spine1[Bone][IK:Spine:2]
+    400122: Spine[LerpAnim]
+    400124: Tail0[Bone]
+    400126: Tail1[Bone][Kine]
+    400128: ThumbLeft0[Bone]
+    400130: ThumbLeft1[Bone]
+    400132: ThumbLeft2[Bone]
+    400134: ThumbRight0[Bone]
+    400136: ThumbRight1[Bone]
+    400138: ThumbRight2[Bone]
+    400140: TighLeft[Bone]
+    400142: TighRight[Bone]
+    400144: ToesLeft[Bone][IK:ToesLeft:1]
+    400146: ToesLeft[LerpAnim]
+    400148: ToesRight[Bone][IK:ToesRight:1]
+    400150: ToesRight[LerpAnim]
+    4300000: Rabbit_LowPoly
+    7400000: Scene
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Rabbit_LowPoly
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Scene
+      takeName: Scene
+      firstFrame: 43
+      lastFrame: 600
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
