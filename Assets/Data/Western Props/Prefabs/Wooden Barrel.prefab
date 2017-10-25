@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4000011401001550}
   - component: {fileID: 33000012784942110}
   - component: {fileID: 23000012700566592}
+  - component: {fileID: 65797072628416328}
+  - component: {fileID: 114294147871123954}
   m_Layer: 0
   m_Name: Wooden Barrel
   m_TagString: Untagged
@@ -34,9 +36,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012391726282}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9998015, y: 1.7763568e-17, z: -0.000061564664}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.1731439, y: -18.141407, z: 39.887344}
+  m_LocalScale: {x: 0.025071187, y: 0.025071189, z: 0.025071189}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -80,3 +82,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012391726282}
   m_Mesh: {fileID: 4300000, guid: cd47bf47fc19f4845ab661bec572be01, type: 3}
+--- !u!65 &65797072628416328
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012391726282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 83.89543, y: 99.956024, z: 83.72991}
+  m_Center: {x: 0.024736404, y: 50.099815, z: -0.16559982}
+--- !u!114 &114294147871123954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012391726282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819ee0d79a7b6ac4cbd9381cd1eea810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyedVersion: {fileID: 0}
