@@ -8,6 +8,7 @@ public class PlayerShoot : MonoBehaviour {
     private Camera cam;
     [SerializeField]
     private LayerMask mask;
+    public bool hitme = false;
 
     private void Start()
     {
@@ -31,9 +32,9 @@ public class PlayerShoot : MonoBehaviour {
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
             Debug.Log("WE hit " + _hit.collider.name);
-            if (_hit.collider.tag == "barrel")
+            if (_hit.collider.tag == "bottle")
             {
-
+                hitme = true;
             }
         }
     }

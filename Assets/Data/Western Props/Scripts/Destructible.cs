@@ -4,6 +4,7 @@
 // Watch the tutorial over at http://youtube.com/brackeys/.
 // --------------------------------------
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,14 +12,22 @@ using UnityEngine;
 public class Destructible : MonoBehaviour {
 
 	public GameObject destroyedVersion;	// Reference to the shattered version of the object
-
+    public PlayerShoot ps;
 	// If the player clicks on the object
-	void OnMouseDown ()
+	void Update()
 	{
-		// Spawn a shattered object
-		Instantiate(destroyedVersion, transform.position, transform.rotation);
-		// Remove the current object
-		Destroy(gameObject);
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (ps.hitme)
+            {
+                // Spawn a shattered object
+                Instantiate(destroyedVersion, transform.position, transform.rotation);
+                // Remove the current object
+                Destroy(gameObject);
+            }
+
+        }
+
 	}
 
 }
