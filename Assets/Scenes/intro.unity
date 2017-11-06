@@ -293,7 +293,9 @@ Prefab:
       propertyPath: m_WindMain
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114919532456811436, guid: acffb97a7185d3e4b8f18296f73d1a64, type: 2}
+    - {fileID: 114768261138369692, guid: acffb97a7185d3e4b8f18296f73d1a64, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: acffb97a7185d3e4b8f18296f73d1a64, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &561205476
