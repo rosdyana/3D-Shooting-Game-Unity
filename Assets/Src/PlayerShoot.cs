@@ -4,6 +4,8 @@ public class PlayerShoot : MonoBehaviour {
 
     public PlayerWeapon weapon;
     public ParticleSystem muzzleFlash;
+    public Animator anim;
+    public GameObject impactEffect;
 
     [SerializeField]
     private Camera cam;
@@ -29,7 +31,9 @@ public class PlayerShoot : MonoBehaviour {
 
     void Shoot()
     {
+        anim.SetBool("isShooting", true);
         muzzleFlash.Play();
+
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
@@ -39,5 +43,8 @@ public class PlayerShoot : MonoBehaviour {
                 hitme = true;
             }
         }
+        GameObject impactGO = Instantiate(impactEffect, _hit.point, Quaternion.LookRotation(_hit.normal));
+        Destroy(impactGO, 2f);
+        anim.SetBool("isShooting", false);
     }
 }

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23722793835231982}
   - component: {fileID: 54937248804627740}
   - component: {fileID: 65068823213782802}
-  - component: {fileID: 114092994268454532}
+  - component: {fileID: 114106029001646366}
   m_Layer: 0
   m_Name: Whisky Bottle
   m_TagString: bottle
@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1798096932432250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.409, y: 4.061, z: 9.68}
-  m_LocalScale: {x: 0.037499335, y: 0.037499327, z: 0.037499327}
+  m_LocalPosition: {x: -5.8, y: -0.248, z: -3.45}
+  m_LocalScale: {x: 0.044843875, y: 0.044843875, z: 0.044843875}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -53,6 +53,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -68,6 +69,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -96,7 +98,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &65068823213782802
 BoxCollider:
@@ -110,7 +112,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.007439, y: 29.890406, z: 11.573905}
   m_Center: {x: -0.0000009536743, y: 14.944909, z: -0.0000009536743}
---- !u!114 &114092994268454532
+--- !u!114 &114106029001646366
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -121,5 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819ee0d79a7b6ac4cbd9381cd1eea810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyedVersion: {fileID: 1653622015929452, guid: 443cc36be35f6294c9f0ad8814df93e0,
+  destroyedVersion: {fileID: 1874755923645608, guid: d5c3573356a11c749b57a75101fb8d12,
     type: 2}
+  ps: {fileID: 0}
