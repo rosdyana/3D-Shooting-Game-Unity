@@ -119,6 +119,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 949551067}
   m_Script: {fileID: 11500000, guid: 86fd9d5110efd154ca5dddf599656266, type: 3}
+--- !u!198 &84840907 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198505613134173588, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 949551067}
 --- !u!1 &409826456
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +488,31 @@ Prefab:
       propertyPath: goodBottleVersion
       value: 
       objectReference: {fileID: 800818585}
+    - target: {fileID: 114039654306399072, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
+        type: 2}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 84840907}
+    - target: {fileID: 198505613134173588, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
+        type: 2}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198505613134173588, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
+        type: 2}
+      propertyPath: randomSeed
+      value: -1731834281
+      objectReference: {fileID: 0}
+    - target: {fileID: 198427483722655896, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
+        type: 2}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198427483722655896, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
+        type: 2}
+      propertyPath: randomSeed
+      value: -2046350448
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39919ad5e61f2b449a92fcd6d36de3ee, type: 2}
   m_IsPrefabParent: 0

@@ -3,6 +3,7 @@
 public class PlayerShoot : MonoBehaviour {
 
     public PlayerWeapon weapon;
+    public ParticleSystem muzzleFlash;
 
     [SerializeField]
     private Camera cam;
@@ -28,6 +29,7 @@ public class PlayerShoot : MonoBehaviour {
 
     void Shoot()
     {
+        muzzleFlash.Play();
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
