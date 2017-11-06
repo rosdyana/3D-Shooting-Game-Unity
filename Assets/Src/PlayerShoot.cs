@@ -15,6 +15,7 @@ public class PlayerShoot : MonoBehaviour {
 
     private void Start()
     {
+        Cursor.visible = false;
         if (cam == null)
         {
             this.enabled = true;
