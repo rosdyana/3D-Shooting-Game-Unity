@@ -961,7 +961,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 883460231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 235.5, y: 230.5, z: 0}
+  m_LocalPosition: {x: 283.5, y: 230.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 561205477}
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   mode: 1
   showGeneratedNormals: 0
   offsetScale: 0.2
-  blurRadius: 18
+  blurRadius: 8
   edgeThresholdMin: 0.05
   edgeThreshold: 0.2
   edgeSharpness: 4
@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1157601285}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fd999d1b2cf94a45a5b0a47ce074bef, type: 3}
   m_Name: 
@@ -1283,7 +1283,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  useDepthCorrection: 0
+  useDepthCorrection: 1
   zCurve:
     serializedVersion: 2
     m_Curve:
@@ -1358,8 +1358,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   saturation: 1
   selectiveCc: 0
-  selectiveFromColor: {r: 0.44852942, g: 0.8402638, b: 1, a: 1}
-  selectiveToColor: {r: 0.41176468, g: 0.878296, b: 1, a: 1}
+  selectiveFromColor: {r: 1, g: 1, b: 1, a: 1}
+  selectiveToColor: {r: 0.9044118, g: 0.96440166, b: 1, a: 1}
   mode: 0
   updateTextures: 1
   colorCorrectionCurvesShader: {fileID: 4800000, guid: 62bcade1028c24ca1a39760ed84b9487,
