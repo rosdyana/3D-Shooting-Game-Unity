@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class soundMgr : MonoBehaviour {
+
     public void playSound(AudioSource audio)
     {
         audio.Play();

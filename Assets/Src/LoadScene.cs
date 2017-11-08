@@ -25,6 +25,8 @@ public class LoadScene : MonoBehaviour {
 
     IEnumerator LoadAsynchornously (int sceneIdx)
     {
+        yield return new WaitForSeconds(1);
+
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIdx);
 
         loadingScreen.SetActive(true);
