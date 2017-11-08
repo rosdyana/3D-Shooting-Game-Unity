@@ -18,6 +18,11 @@ public class LoadScene : MonoBehaviour {
         StartCoroutine(LoadAsynchornously(idxLevel));
     }
 
+    public void openAbout(GameObject panel)
+    {
+        panel.SetActive(true);
+    }
+
     IEnumerator LoadAsynchornously (int sceneIdx)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIdx);
