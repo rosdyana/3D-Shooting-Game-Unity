@@ -26,7 +26,7 @@ public class Destructible : MonoBehaviour {
                 // Remove the current object
                 Debug.Log("destroy bottle");
                 Destroy(gameObject);
-                Destroy(destroyedGO, 5);
+                Destroy(destroyedGO, 3);
                 ps.addScore = true;
                 ps.hitme = false;
             }
