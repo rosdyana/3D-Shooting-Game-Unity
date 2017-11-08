@@ -7,10 +7,20 @@ public class Score : MonoBehaviour {
     public Text scoreText;
     [SerializeField]
     private int point = 50;
-	
-	// Update is called once per frame
-	void Update () {
-        if (ps.hitme)
-            scoreText.text += point.ToString();
+    private int score;
+
+    private void Start()
+    {
+        scoreText.text = "Score : 0";
+    }
+    // Update is called once per frame
+    void Update () {
+        if (ps.addScore)
+        {
+            score += point;
+            scoreText.text = score.ToString();
+            ps.addScore = false;
+        }
+
 	}
 }

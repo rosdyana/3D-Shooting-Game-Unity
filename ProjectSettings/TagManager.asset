@@ -6,6 +6,7 @@ TagManager:
   tags:
   - barrel
   - bottle
+  - water
   layers:
   - Default
   - TransparentFX

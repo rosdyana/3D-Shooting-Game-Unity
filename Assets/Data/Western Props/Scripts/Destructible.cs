@@ -18,12 +18,17 @@ public class Destructible : MonoBehaviour {
 	{
         if (Input.GetButtonDown("Fire1"))
         {
+            Debug.Log("Fire1");
             if (ps.hitme)
             {
                 // Spawn a shattered object
-                Instantiate(destroyedVersion, transform.position, transform.rotation);
+                GameObject destroyedGO = Instantiate(destroyedVersion, transform.position, transform.rotation);
                 // Remove the current object
+                Debug.Log("destroy bottle");
                 Destroy(gameObject);
+                Destroy(destroyedGO, 5);
+                ps.addScore = true;
+                ps.hitme = false;
             }
 
         }
