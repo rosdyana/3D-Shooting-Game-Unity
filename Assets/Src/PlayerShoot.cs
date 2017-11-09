@@ -13,6 +13,7 @@ public class PlayerShoot : MonoBehaviour {
     public AudioSource impactBottleFx;
     public AudioSource impactWoodFx;
     public AudioSource impactBombFx;
+    public GameObject destroyedVersion;
 
     [SerializeField]
     private Camera cam;
@@ -64,28 +65,37 @@ public class PlayerShoot : MonoBehaviour {
         {
 
 
-            // Debug.Log("WE hit " + _hit.collider.name);
+            Debug.Log("WE hit " + _hit.collider.name);
             if (_hit.collider.tag == "bottle")
             {
                 Debug.Log("WE hit " + _hit.collider.tag);
                 impactBottleFx.Play();
                 addScore = true;
-                GameObject impactBottleGO = Instantiate(bottleImpact, _hit.point, Quaternion.LookRotation(_hit.normal));
-                Destroy(impactBottleGO, 2f);
+                GameObject _bottle = GameObject.Find(_hit.collider.name);
+                GameObject destroyedGO = Instantiate(destroyedVersion, _bottle.gameObject.transform.position, _bottle.gameObject.transform.rotation);
+
+                Destroy(_bottle.gameObject);
+                Destroy(destroyedGO, 3);
+
             }
             else if(_hit.collider.tag == "bomb")
             {
                 Debug.Log("WE hit " + _hit.collider.tag);
                 impactBombFx.Play();
                 reduceScore = true;
-
+                GameObject impactBottleGO = Instantiate(bottleImpact, _hit.point, Quaternion.LookRotation(_hit.normal));
+                Destroy(impactBottleGO, 2f);
             }
             else if (_hit.collider.tag == "bottle_2")
             {
                 Debug.Log("WE hit " + _hit.collider.tag);
                 impactBottleFx.Play();
-                hitBottle = true;
+                addScore = true;
+                GameObject _bottle = GameObject.Find(_hit.collider.name);
+                GameObject destroyedGO = Instantiate(destroyedVersion, _bottle.gameObject.transform.position, _bottle.gameObject.transform.rotation);
 
+                Destroy(_bottle.gameObject);
+                Destroy(destroyedGO, 3);
             }
             else if (_hit.collider.tag == "fake_bottle")
             {

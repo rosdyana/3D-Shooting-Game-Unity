@@ -2253,7 +2253,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013120505474, guid: 991c87290ffb77d449861b8c11415b73, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: bottle_2
       objectReference: {fileID: 0}
     - target: {fileID: 1000013120505474, guid: 991c87290ffb77d449861b8c11415b73, type: 2}
       propertyPath: m_Name
@@ -5268,7 +5268,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013120505474, guid: 991c87290ffb77d449861b8c11415b73, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: bottle_2
       objectReference: {fileID: 0}
     - target: {fileID: 1000013120505474, guid: 991c87290ffb77d449861b8c11415b73, type: 2}
       propertyPath: m_Name
@@ -6164,7 +6164,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013120505474, guid: 991c87290ffb77d449861b8c11415b73, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: bottle_2
       objectReference: {fileID: 0}
     - target: {fileID: 54330637098555078, guid: 991c87290ffb77d449861b8c11415b73,
         type: 2}
@@ -7476,7 +7476,8 @@ MonoBehaviour:
   impactBottleFx: {fileID: 1751522687}
   impactWoodFx: {fileID: 1498105703}
   impactBombFx: {fileID: 2016142097}
-  timer: {fileID: 1258306326}
+  destroyedVersion: {fileID: 1653622015929452, guid: 443cc36be35f6294c9f0ad8814df93e0,
+    type: 2}
   cam: {fileID: 892119642}
   mask:
     serializedVersion: 2
@@ -50789,7 +50790,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013120505474, guid: 991c87290ffb77d449861b8c11415b73, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: bottle_2
       objectReference: {fileID: 0}
     - target: {fileID: 54330637098555078, guid: 991c87290ffb77d449861b8c11415b73,
         type: 2}
@@ -50850,7 +50851,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013120505474, guid: 991c87290ffb77d449861b8c11415b73, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: bottle_2
       objectReference: {fileID: 0}
     - target: {fileID: 54330637098555078, guid: 991c87290ffb77d449861b8c11415b73,
         type: 2}
