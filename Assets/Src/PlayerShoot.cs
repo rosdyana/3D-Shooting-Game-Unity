@@ -14,8 +14,10 @@ public class PlayerShoot : MonoBehaviour {
     private Camera cam;
     [SerializeField]
     private LayerMask mask;
-    public bool hitme = false;
+    public bool hitBottle = false;
+    public bool hitBomb = false;
     public bool addScore = false;
+    public bool reduceScore = false;
     public bool stateFinish = false;
 
     private void Start()
@@ -25,8 +27,10 @@ public class PlayerShoot : MonoBehaviour {
         {
             this.enabled = true;
         }
-        hitme = false;
+        hitBottle = false;
+        hitBomb = false;
         addScore = false;
+        reduceScore = false;
         stateFinish = false;
     }
 
@@ -45,30 +49,35 @@ public class PlayerShoot : MonoBehaviour {
     void Shoot()
     {
 
+        gunShootFx.Play();
+        anim.SetBool("isShooting", true);
+        muzzleFlash.Play();
+
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
-            gunShootFx.Play();
-            anim.SetBool("isShooting", true);
-            muzzleFlash.Play();
+
 
             // Debug.Log("WE hit " + _hit.collider.name);
             if (_hit.collider.tag == "bottle")
             {
                 Debug.Log("WE hit " + _hit.collider.tag);
                 impactBottleFx.Play();
-                hitme = true;
+                hitBottle = true;
             }
-            if(_hit.collider.tag == "barrel")
+            else if(_hit.collider.tag == "bomb")
             {
                 Debug.Log("WE hit " + _hit.collider.tag);
                 impactWoodFx.Play();
+                reduceScore = true;
+
             }
 
-            GameObject impactGO = Instantiate(impactEffect, _hit.point, Quaternion.LookRotation(_hit.normal));
-            Destroy(impactGO, 2f);
-            anim.SetBool("isShooting", false);
         }
+
+        GameObject impactGO = Instantiate(impactEffect, _hit.point, Quaternion.LookRotation(_hit.normal));
+        Destroy(impactGO, 2f);
+        anim.SetBool("isShooting", false);
 
     }
 }

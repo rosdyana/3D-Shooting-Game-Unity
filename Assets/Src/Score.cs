@@ -8,6 +8,8 @@ public class Score : MonoBehaviour {
     [SerializeField]
     private int point = 50;
     public int score = 0;
+    [SerializeField]
+    private int reducepoint = 25;
 
     private void Start()
     {
@@ -20,6 +22,12 @@ public class Score : MonoBehaviour {
             score += point;
             scoreText.text = "Score : "+score.ToString();
             ps.addScore = false;
+        }
+        else if (ps.reduceScore)
+        {
+            score -= reducepoint;
+            scoreText.text = "Score : " + score.ToString();
+            ps.reduceScore = false;
         }
 
 	}

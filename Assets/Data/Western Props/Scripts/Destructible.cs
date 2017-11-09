@@ -19,7 +19,7 @@ public class Destructible : MonoBehaviour {
         if (Input.GetButtonDown("Fire1"))
         {
             Debug.Log("Fire1");
-            if (ps.hitme)
+            if (ps.hitBottle)
             {
                 Debug.Log("destroy bottle");
                 // Spawn a shattered object
@@ -28,7 +28,7 @@ public class Destructible : MonoBehaviour {
                 Destroy(gameObject);
                 Destroy(destroyedGO, 3);
                 ps.addScore = true;
-                ps.hitme = false;
+                ps.hitBottle = false;
             }
 
         }
