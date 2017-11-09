@@ -5,6 +5,7 @@ public class Timer : MonoBehaviour {
 
     public Score score;
     public Text timer;
+    public PlayerShoot ps;
     [SerializeField]
     private float countdown = 60;
     private bool isShowResult = true;
@@ -26,8 +27,9 @@ public class Timer : MonoBehaviour {
             {
                 showResult(pnlResult);
                 isShowResult = false;
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
                 Cursor.visible = true;
+                ps.stateFinish = true;
             }
         }
         

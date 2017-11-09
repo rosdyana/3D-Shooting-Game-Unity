@@ -16,6 +16,7 @@ public class PlayerShoot : MonoBehaviour {
     private LayerMask mask;
     public bool hitme = false;
     public bool addScore = false;
+    public bool stateFinish = false;
 
     private void Start()
     {
@@ -24,26 +25,34 @@ public class PlayerShoot : MonoBehaviour {
         {
             this.enabled = true;
         }
+        hitme = false;
+        addScore = false;
+        stateFinish = false;
     }
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (!stateFinish)
         {
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+            }
         }
+
     }
 
     void Shoot()
     {
-        gunShootFx.Play();
-        anim.SetBool("isShooting", true);
-        muzzleFlash.Play();
 
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
-           // Debug.Log("WE hit " + _hit.collider.name);
+            gunShootFx.Play();
+            anim.SetBool("isShooting", true);
+            muzzleFlash.Play();
+
+            // Debug.Log("WE hit " + _hit.collider.name);
             if (_hit.collider.tag == "bottle")
             {
                 Debug.Log("WE hit " + _hit.collider.tag);
@@ -55,9 +64,11 @@ public class PlayerShoot : MonoBehaviour {
                 Debug.Log("WE hit " + _hit.collider.tag);
                 impactWoodFx.Play();
             }
+
+            GameObject impactGO = Instantiate(impactEffect, _hit.point, Quaternion.LookRotation(_hit.normal));
+            Destroy(impactGO, 2f);
+            anim.SetBool("isShooting", false);
         }
-        GameObject impactGO = Instantiate(impactEffect, _hit.point, Quaternion.LookRotation(_hit.normal));
-        Destroy(impactGO, 2f);
-        anim.SetBool("isShooting", false);
+
     }
 }

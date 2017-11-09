@@ -18,7 +18,7 @@ public class Score : MonoBehaviour {
         if (ps.addScore)
         {
             score += point;
-            scoreText.text = score.ToString();
+            scoreText.text = "Score : "+score.ToString();
             ps.addScore = false;
         }
 

@@ -13,7 +13,7 @@ public class Destructible : MonoBehaviour {
 
 	public GameObject destroyedVersion;	// Reference to the shattered version of the object
     public PlayerShoot ps;
-	// If the player clicks on the object
+
 	void Update()
 	{
         if (Input.GetButtonDown("Fire1"))
@@ -21,10 +21,10 @@ public class Destructible : MonoBehaviour {
             Debug.Log("Fire1");
             if (ps.hitme)
             {
+                Debug.Log("destroy bottle");
                 // Spawn a shattered object
                 GameObject destroyedGO = Instantiate(destroyedVersion, transform.position, transform.rotation);
                 // Remove the current object
-                Debug.Log("destroy bottle");
                 Destroy(gameObject);
                 Destroy(destroyedGO, 3);
                 ps.addScore = true;
