@@ -10,6 +10,8 @@ public class ObjectSpawner : MonoBehaviour {
     public int freqTarget;
     public int freqBomb;
 
+    public PlayerShoot ps;
+
     void Start()
     {
         InvokeRepeating("SpawnTarget", 1f, freqTarget);
@@ -21,13 +23,14 @@ public class ObjectSpawner : MonoBehaviour {
         //rb = GetComponent<Rigidbody>();
         for (byte i = 0; i < num_of_target; i++)
         {
+            if (ps.stateFinish) break;
             //GameObject target = Instantiate(bottleReference, new Vector3(-5.8f, -0.248f, Random.Range(-3 , 4)), Quaternion.identity) as GameObject;
             //rb.AddForce(throwForce, ForceMode.Impulse);
             Rigidbody cloneBottle;
-            cloneBottle = Instantiate(rbBottle, new Vector3(-3.8f, -0.248f, Random.Range(-4 , 5)), Quaternion.identity) as Rigidbody;
+            cloneBottle = Instantiate(rbBottle, new Vector3(-6f, -0.248f, Random.Range(-4 , 5)), Quaternion.identity) as Rigidbody;
             //clone.velocity = transform.TransformDirection(Vector3.forward * 10);
             cloneBottle.AddForce(throwTargetForce, ForceMode.Impulse);
-            Destroy(cloneBottle, 2);
+            Destroy(cloneBottle.gameObject, 2);
         }
     }
 
@@ -36,13 +39,14 @@ public class ObjectSpawner : MonoBehaviour {
         //rb = GetComponent<Rigidbody>();
         for (byte i = 0; i < num_of_target; i++)
         {
+            if (ps.stateFinish) break;
             //GameObject target = Instantiate(bottleReference, new Vector3(-5.8f, -0.248f, Random.Range(-3 , 4)), Quaternion.identity) as GameObject;
             //rb.AddForce(throwForce, ForceMode.Impulse);
             Rigidbody cloneBomb;
-            cloneBomb = Instantiate(rbDinamyte, new Vector3(-3.8f, -0.248f, Random.Range(-4, 5)), Quaternion.identity) as Rigidbody;
+            cloneBomb = Instantiate(rbDinamyte, new Vector3(-6f, -0.248f, Random.Range(-4, 5)), Quaternion.identity) as Rigidbody;
             //clone.velocity = transform.TransformDirection(Vector3.forward * 10);
             cloneBomb.AddForce(throwBombForce, ForceMode.Impulse);
-            Destroy(cloneBomb, 2);
+            Destroy(cloneBomb.gameObject, 2);
         }
     }
 }

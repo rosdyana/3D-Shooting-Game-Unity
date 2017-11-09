@@ -27,8 +27,8 @@ public class Destructible : MonoBehaviour {
                 // Remove the current object
                 Destroy(gameObject);
                 Destroy(destroyedGO, 3);
-                ps.addScore = true;
                 ps.hitBottle = false;
+                ps.addScore = true;
             }
 
         }

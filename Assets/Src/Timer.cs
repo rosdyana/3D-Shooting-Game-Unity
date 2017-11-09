@@ -11,9 +11,9 @@ public class Timer : MonoBehaviour {
     private bool isShowResult = true;
     [SerializeField]
     private GameObject pnlResult;
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         if(countdown >= 0)
         {
             countdown -= Time.deltaTime;
@@ -25,11 +25,10 @@ public class Timer : MonoBehaviour {
             Debug.Log(score.score);
             if (isShowResult)
             {
-                showResult(pnlResult);
                 isShowResult = false;
-                //Time.timeScale = 0;
                 Cursor.visible = true;
                 ps.stateFinish = true;
+                showResult(pnlResult);
             }
         }
         

@@ -8,6 +8,11 @@ TagManager:
   - bottle
   - water
   - bomb
+  - Fire
+  - wood
+  - bottle_2
+  - fake_bottle
+  - stage
   layers:
   - Default
   - TransparentFX
