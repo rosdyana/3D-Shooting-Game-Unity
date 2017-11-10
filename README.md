@@ -23,4 +23,5 @@ https://github.com/rosdyana/MidTerm-Project-FPS-Build
 - Intro backsound - https://open.spotify.com/track/7yC7FWZz24L43brXzNpLWT
 - beach backsound - https://soundcloud.com/oscardeavila/playa-de-caneli-as-pg-ambiente?in=oscardeavila/sets/sound-field
 - post-preprocessing , color correction - https://www.assetstore.unity3d.com/en/#!/content/83912
-- Font : Noto Sans - https://fonts.google.com/specimen/Noto+Sans
+- Noto Sans - https://fonts.google.com/specimen/Noto+Sans
+- Ceviche One - https://fonts.google.com/specimen/Ceviche+One

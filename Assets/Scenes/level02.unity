@@ -17260,7 +17260,17 @@ Prefab:
     - target: {fileID: 54567987750783492, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 54567987750783492, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54567987750783492, guid: 39919ad5e61f2b449a92fcd6d36de3ee,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114039654306399072, guid: 39919ad5e61f2b449a92fcd6d36de3ee, type: 2}
@@ -27290,7 +27300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1258306325
 RectTransform:
   m_ObjectHideFlags: 0
