@@ -5,6 +5,7 @@ MidTerm Project FPS for Interactive Video Game Development. This project is a pr
 https://github.com/rosdyana/MidTerm-Project-FPS-Build
 
 # Documentation
+https://docs.google.com/document/d/1pZAQoaavOBIYZhGk8HHJHSUcIOhM1-dhcmGLowZxgVk/edit?usp=sharing
 
 # Slides
 
