@@ -6346,7 +6346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ps: {fileID: 667805259}
   scoreText: {fileID: 579930248}
-  point: 50
+  point: 100
   score: 0
   reducepoint: 25
 --- !u!1 &581333759
