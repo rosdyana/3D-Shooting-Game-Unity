@@ -8,6 +8,7 @@ https://github.com/rosdyana/MidTerm-Project-FPS-Build
 https://docs.google.com/document/d/1pZAQoaavOBIYZhGk8HHJHSUcIOhM1-dhcmGLowZxgVk/edit?usp=sharing
 
 # Slides
+https://docs.google.com/presentation/d/1U6bCCZFiw8YMLyYt60E2yIYnI-ezVNfQ22_htsOanmM/edit?usp=sharing
 
 ## Assets Credit
 - Weaponary - http://devassets.com/assets/modern-weapons/
