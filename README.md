@@ -1,6 +1,8 @@
 # MidTerm-Project-FPS
 MidTerm Project FPS for Interactive Video Game Development. This project is a project assignment for Interactive Video Game Development Course at Yuan Ze University.
 
+![](https://media.giphy.com/media/3ohs7IMlFDE29UQpqg/giphy.gif)
+
 # Build version
 https://github.com/rosdyana/MidTerm-Project-FPS-Build
 
@@ -9,6 +11,9 @@ https://docs.google.com/document/d/1pZAQoaavOBIYZhGk8HHJHSUcIOhM1-dhcmGLowZxgVk/
 
 # Slides
 https://docs.google.com/presentation/d/1U6bCCZFiw8YMLyYt60E2yIYnI-ezVNfQ22_htsOanmM/edit?usp=sharing
+
+# Video
+https://youtu.be/8Xh6S025qc8
 
 ## Assets Credit
 - Weaponary - http://devassets.com/assets/modern-weapons/
