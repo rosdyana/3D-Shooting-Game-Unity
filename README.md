@@ -12,8 +12,8 @@ https://docs.google.com/document/d/1pZAQoaavOBIYZhGk8HHJHSUcIOhM1-dhcmGLowZxgVk/
 # Slides
 https://docs.google.com/presentation/d/1U6bCCZFiw8YMLyYt60E2yIYnI-ezVNfQ22_htsOanmM/edit?usp=sharing
 
-# Video
-https://youtu.be/8Xh6S025qc8
+## Video
+[![Infection Demo Video](https://img.youtube.com/vi/8Xh6S025qc8/0.jpg)](https://www.youtube.com/watch?v=8Xh6S025qc8)
 
 ## Tools
 * [Unity](https://unity3d.com/)
