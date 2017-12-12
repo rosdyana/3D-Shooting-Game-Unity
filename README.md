@@ -15,6 +15,19 @@ https://docs.google.com/presentation/d/1U6bCCZFiw8YMLyYt60E2yIYnI-ezVNfQ22_htsOa
 # Video
 https://youtu.be/8Xh6S025qc8
 
+## Tools
+* [Unity](https://unity3d.com/)
+
+## Authors
+* **Rosdyana Kusuma**
+See also the list of [contributors](https://github.com/rosdyana/InfectionAR/contributors) who participated in this project.
+
+## License
+This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Contributing
+Feel free to contribute.
+
 ## Assets Credit
 - Weaponary - http://devassets.com/assets/modern-weapons/
 - Dynamite, Wooden Barrel, Whiskey Bottle - http://devassets.com/assets/western-props-pack/
